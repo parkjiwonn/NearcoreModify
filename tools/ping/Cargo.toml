@@ -1,0 +1,25 @@
+[package]
+name = "near-ping"
+version.workspace = true
+authors.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+repository.workspace = true
+license.workspace = true
+publish = false
+
+[dependencies]
+actix-web.workspace = true
+anyhow.workspace = true
+chrono.workspace = true
+clap.workspace = true
+once_cell.workspace = true
+prometheus.workspace = true
+tokio.workspace = true
+tracing.workspace = true
+
+near-async.workspace = true
+near-jsonrpc.workspace = true
+near-network.workspace = true
+near-o11y.workspace = true
+near-primitives.workspace = true

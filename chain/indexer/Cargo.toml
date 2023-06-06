@@ -1,0 +1,36 @@
+[package]
+name = "near-indexer"
+version.workspace = true
+authors.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+repository.workspace = true
+license.workspace = true
+publish = false
+
+[dependencies]
+actix.workspace = true
+anyhow.workspace = true
+async-recursion.workspace = true
+futures.workspace = true
+once_cell.workspace = true
+rocksdb.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+tokio.workspace = true
+tracing.workspace = true
+
+nearcore.workspace = true
+near-client.workspace = true
+near-chain-configs.workspace = true
+near-dyn-configs.workspace = true
+near-crypto.workspace = true
+near-indexer-primitives.workspace = true
+near-o11y.workspace = true
+near-primitives.workspace = true
+near-store.workspace = true
+node-runtime.workspace = true
+
+[features]
+calimero_zero_storage = ["near-primitives/calimero_zero_storage"]
+nightly = ["nearcore/nightly"]

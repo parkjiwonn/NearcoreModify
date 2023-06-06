@@ -1,0 +1,18 @@
+[package]
+name = "near-jsonrpc-adversarial-primitives"
+version.workspace = true
+authors.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+repository.workspace = true
+license.workspace = true
+publish = false
+
+[dependencies]
+serde.workspace = true
+
+near-primitives.workspace = true
+near-network.workspace = true
+
+[features]
+test_features = ["near-network/test_features"]
